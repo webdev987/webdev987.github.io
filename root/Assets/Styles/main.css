@@ -1,0 +1,170 @@
+/*
+Feasting Fox Base Style Sheet
+Author:	Richard Scharff & Janessa Taylor
+Date:	12/13/2020
+Eilename:			main.css
+Supporting Files:
+
+*/
+
+/* Display HTML5 structural elements as blocks */
+article, aside, figure, figcaption, footer, hgroup, header,
+
+section, nav {
+	display: block;
+	
+}
+/* Set the default page element styles */
+body {
+	margin: 0px auto;
+	width: 800px;	
+}
+body * {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 100%;
+	font-weight: inherit;
+	line-height: 1.2em;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	vertical-align: baseline;
+}
+/* skip navigation link */
+p.skipnavigation {
+   margin: 0;
+}
+p.skipnavigation a {
+   position: absolute;
+   left: -10000px;
+}
+p.skipnavigation a:focus {
+   color: black;
+   background-color: snow;
+   top: 2%;
+   left: auto;
+   right: 2%;
+   z-index: 2;
+}
+
+
+/* Navigation links */
+nav ul {
+	list-style: none;
+	margin-top: 5px;
+}
+nav li {
+	float: left;
+	width: 19%;
+	text-align: center;
+	border: 1px solid rgb(34, 139, 34);
+	margin: 5px 2px 15px 2px;
+}
+nav li a {
+	display: block;
+	color: rgb(34, 139, 34);
+	text-decoration: none;
+	background-color: white;
+}
+nav li a:hover {
+	color: white;
+	background-color: rgb(34, 139, 34);
+}
+
+/* h1, h2, p styles */
+hl {
+	font-size: 20px;
+	font-weight: normal;
+	letter-spacing: 5px;
+	color: rgb(34, 139, 34);
+	margin-top: 15px;
+}
+h2 {
+	font-size: 16px;
+	font-weight: normal;
+	letter-spacing: 5px;
+	color: rgb(34, 139, 34);
+	margin-top: 15px;
+}
+p {
+	margin: 7px;
+}
+/* list styles */
+#main {
+	border-top: 2px solid rgb(34, 139, 34);
+}
+#main ul {
+	list-style-type: circle;
+	margin-left: 50px;
+	font-size: 12px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#main ul li {
+	margin-bottom: 10px;
+}
+#main ul li strong {
+	font-weight: normal;
+	color: rgb(68,76,169);
+}
+/*footer styles */
+footer {
+	border-top: 5px solid rgb(34, 139, 34);
+	clear: both;
+	float: left;
+	width: 100%;
+}
+address {
+	font-style: normal;
+	font-size: 12px;
+	text-align: center;
+	padding: 5px;
+}
+/* image styles */
+img.irregularWrap {
+	clear: right;
+	float: right;
+	margin: 0px;
+}
+/* small screen/tablet styles */
+@media screen and (min-width: 500px), print {
+	figure {
+		display: block;
+	}
+}
+/* standard/large screen styles */
+@media screen and (min-width: 864px) {
+	header {
+		background-color: white;
+	}
+	h1 span {
+		display: none;		
+	}
+	h1 img {
+		display: block;
+	}
+	article {
+		float: left;
+		width: 64%;
+	}
+	aside {
+		display: block;
+	}
+}
+
+/* print styles */
+@media print {
+   address, article, aside, body, .container, footer, header, h1, h2, #join, #main, p {
+      color: #000;
+      background: #fff;
+   }
+   body {
+	   max-width: 100%;
+	   border: 0;
+   }
+   nav {
+      display: none;	  
+   }
+}
+@page {
+   margin: 1in;
+}

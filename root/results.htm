@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	<!--
+	
+		Feasting Fox Website
+		Author:	Richard Scharff & Janessa Taylor
+		Date:	12/13/2020
+		
+		FileName:			results.htm
+		Supporting files: 	fflogo.jpg, main.css
+		
+	-->
+
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width">
+		<script src="Assets/JavaScripts/modernizr.custom.40753.js"></script>
+		
+		
+		<title>Results</title>
+	</head>
+		
+	<body>
+		<div class="container">
+         <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p>
+		 
+		<header>
+			<img src="Assets/Images/fflogo.jpg" width="650" height="175" alt="Feasting Fox" />
+		</header>
+
+			<nav class="horizontal">
+				<ul>
+					<li><a href="index.htm">Home</a></li>
+					<li><a href="about.htm">About Us</a></li>
+					<li><a href="look.htm">A Quick Look</a></li>
+					<li><a href="menu.htm">Menu</a></li>
+					<li><a href="contact.htm">Contact Us</a></li>
+				</ul>
+			</nav>	
+			
+			<article id="contentstart">
+				<h2>Your form has been submitted</h2>
+                  <h3>You entered the following data:</h3>
+         
+               <script>
+                   var formData = location.search;
+                   formData = formData.substring(1, formData.length);
+                   while (formData.indexOf("+") !== -1) {
+                      formData = formData.replace("+", " ");
+                   }
+                   formData = decodeURIComponent(formData);
+                   var formArray = formData.split("&");
+                   for (var i = 0; i < formArray.length; i = i + 1) {
+                      document.write("<p>" + formArray[i] + "</p>");
+                   }
+               </script>
+			</article>
+			
+			<footer>
+				<address>					
+					4200 South Grand &#183;
+					St.Louis, MO  63118 &#183;
+					(314) 352-3500 &#183;
+					thefeastingfox@gmail.com
+				</address>	
+			</footer>
+		</div>
+
+	</body>
+
+</html>	

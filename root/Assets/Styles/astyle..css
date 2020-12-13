@@ -1,0 +1,15 @@
+/*
+	Feasting Fox Audio Style Sheet
+	
+	Author: Richard Scharff & Janessa Taylor
+	Date:	12/13/2020
+	Filename:				astyle.css
+	Supporting Files:
+	
+	*/
+	
+	/* Audio styles */
+	audio, object, embed {
+		display: block;
+		margin: 15px auto;
+	}
